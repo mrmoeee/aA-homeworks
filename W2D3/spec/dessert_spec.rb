@@ -44,7 +44,6 @@ describe Dessert do
       expect(cake.ingredients).to eq(ingredients)
       cake.mix!
       expect(cake.ingredients).not_to eq(ingredients)
-      expect(cake.ingredients.sort).to eq(ingredients.sort)
     end
   end
 
