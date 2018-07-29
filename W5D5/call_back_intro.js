@@ -31,7 +31,7 @@ function teaAndBiscuits() {
       //now we do the respoens
       const firstRes = (first === 'yes') ? 'do' : 'don\'t';
       const secondRes = (second === 'yes') ? 'do' : 'don\'t';
-      console.log(`So you ${firstRes} want tea and you ${secondRes} want biscuits.`)
+      console.log(`So you ${firstRes} want tea and you ${secondRes} want biscuits.`);
       reader.close();
     });
   });
@@ -48,7 +48,8 @@ function Dog () {
 }
 
 Dog.prototype.chase = function (cat) {
-  console.log(`My name is ${this.name} and I'm chasing ${cat.name}! Woof!`)
+  console.log(`My name is ${this.name} and I'm chasing ${cat.name}! Woof!`);
+  let dog = "helo\loe";
 };
 
 const Markov = new Cat ();
