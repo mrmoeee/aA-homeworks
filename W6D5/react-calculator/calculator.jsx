@@ -59,11 +59,12 @@ class Calculator extends React.Component{
   }
 
   render(){
+    const {num1, num2, result} = this.state;
     return (
       <div>
-        <h1>{this.state.result}</h1>
-        <input onChange={this.setNum1} value={this.state.num1}></input>
-        <input onChange={this.setNum2} value={this.state.num2}></input>
+        <h1>{result}</h1>
+        <input onChange={this.setNum1} value={num1}></input>
+        <input onChange={this.setNum2} value={num2}></input>
         <button onClick={this.clear}>Clear</button>
         <br />
         <button onClick={this.add}>+</button>
